@@ -1,4 +1,8 @@
 <h1>Medical</h1>
+<% if current_user.role == "medical" %>
+  <%= link_to "SOS", send_sos_mail_path, class: 'btn btn-danger', data: { confirm: "Vous vous apprêter à déclarer que vous avez contracté le SARS-COV-2, et que vous avez besoin d'assistance afin de désinfecter le logement, voulez-vous continuer?"} %>
+<% end %>
+
 <%= current_user.role %>
 
 <%= link_to 'Propriétaire?', dashboards_owner_path, class: 'btn btn-primary' %>
