@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
 ruby '2.6.5'
 
+gem 'carrierwave-aws'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'aws-sdk-rails'
+
 gem 'bootsnap', require: false
 gem 'devise'
 gem 'jbuilder', '~> 2.0'

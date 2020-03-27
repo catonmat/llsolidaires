@@ -12,5 +12,7 @@ class User < ApplicationRecord
     end
   end
 
+  mount_uploader :identity_file, ImageUploader
+
   validates :role, :phone, :last_name, presence: true
 end
